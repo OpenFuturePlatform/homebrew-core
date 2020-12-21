@@ -3,8 +3,8 @@ class Pdm < Formula
 
   desc "Modern Python package manager with PEP 582 support"
   homepage "https://pdm.fming.dev"
-  url "https://files.pythonhosted.org/packages/3d/f8/1bf4cb20fb05c3b128b84d58dedb6df50db7e8cf2f00a694f137042cdfc9/pdm-0.12.0.tar.gz"
-  sha256 "edc6c5c871ac0eb2d7d5ddb4f8db9077126884447fa994a442bee66a9fbd2ecf"
+  url "https://files.pythonhosted.org/packages/49/a2/3d9c7a439934fc1d2722bb58252080c48a3e1675bf11d7b3630ecf9ee489/pdm-0.12.2.tar.gz"
+  sha256 "6add8a788770ae53d3ce0c0809ffb8a8f01748c3bcf0dd8e97450b46ec278ea7"
   license "MIT"
   head "https://github.com/frostming/pdm.git"
 
@@ -14,9 +14,9 @@ class Pdm < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "d05e6bd69e3b29bd3bb2801f935d925377fb8dae74ced92a1e13cf43c86e4856" => :big_sur
-    sha256 "f58537861e94379403ec660ab8c3e06094d3ec5aa69ab3e721267627c7e78fda" => :catalina
-    sha256 "6c8394fcfd1477bd9247782bbe680ed61fdb40f02d43c31c9369e52e9dc21a5b" => :mojave
+    sha256 "20d4afc64f244516bc41a11963f3ba5b8036fcf0e4420acd46d762dd332bbf6e" => :big_sur
+    sha256 "0a37f68f0287eefe75a5bbdcb284a29efda48ba4816de921a61b3c0103369b92" => :catalina
+    sha256 "acb535e40d291ed54d06292aa5a960cef648b409c4042b6c2d3c9063facbcb9a" => :mojave
   end
 
   depends_on "python@3.9"
@@ -52,8 +52,8 @@ class Pdm < Formula
   end
 
   resource "packaging" do
-    url "https://files.pythonhosted.org/packages/16/7c/33ae3aa02eb10ca726b21aa88d338e3f619c674e4fb8544eb352330d880a/packaging-20.7.tar.gz"
-    sha256 "05af3bb85d320377db281cf254ab050e1a7ebcbf5410685a9a407e18a1f81236"
+    url "https://files.pythonhosted.org/packages/d7/c5/e81b9fb8033fe78a2355ea7b1774338e1dca2c9cbd2ee140211a9e6291ab/packaging-20.8.tar.gz"
+    sha256 "78598185a7008a470d64526a8059de9aaa449238f280fc9eb6b13ba6c4109093"
   end
 
   resource "pdm-pep517" do
@@ -64,11 +64,6 @@ class Pdm < Formula
   resource "pep517" do
     url "https://files.pythonhosted.org/packages/31/65/399b2e85e1ee5e34d797643b1d1ce3ec3f2b612e0680d6b7b455c24cb7a7/pep517-0.9.1.tar.gz"
     sha256 "aeb78601f2d1aa461960b43add204cc7955667687fbcf9cdb5170f00556f117f"
-  end
-
-  resource "pip-shims" do
-    url "https://files.pythonhosted.org/packages/d7/01/7a797f03c3a61b09edd51b54e8d3cc0c70159ba76a1fcd57654baffcd5bd/pip_shims-0.5.3.tar.gz"
-    sha256 "05b00ade9d1e686a98bb656dd9b0608a933897283dc21913fad6ea5409ff7e91"
   end
 
   resource "pycomplete" do

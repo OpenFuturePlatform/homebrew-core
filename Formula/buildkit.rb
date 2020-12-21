@@ -2,8 +2,8 @@ class Buildkit < Formula
   desc "Сoncurrent, cache-efficient, and Dockerfile-agnostic builder toolkit"
   homepage "https://github.com/moby/buildkit"
   url "https://github.com/moby/buildkit.git",
-      tag:      "v0.8.0",
-      revision: "d5f179bb796e385076ec57978c08d8a4427b2f74"
+      tag:      "v0.8.1",
+      revision: "8142d66b5ebde79846b869fba30d9d30633e74aa"
   license "Apache-2.0"
   head "https://github.com/moby/buildkit.git"
 
@@ -14,9 +14,9 @@ class Buildkit < Formula
 
   bottle do
     cellar :any_skip_relocation
-    sha256 "f34fdd44e61c1ab563bd7bbd2a8a5f53d7b4442016bc4144ae9bc7151459a35a" => :big_sur
-    sha256 "ca5c093acb45400e32fa5267667e3c3bd95dd1052273737ca28e5dcc082d37b4" => :catalina
-    sha256 "89c49ae30f571168014007ea11966aff9cbd355672d47ce11a6365f529387509" => :mojave
+    sha256 "3e71ae1f0248956f11e74d4d2d90decc62763e61c526ec77d65353d2bc42eeb3" => :big_sur
+    sha256 "ba36ac1a8b1b3c7c2f8e0e6bbbd403be303fa6ca0d193a5193eeb4e22f21d0cb" => :catalina
+    sha256 "e6b41db313e3c7fb44dc70931dbab30e6f59274d522e58e194d5307977680d3d" => :mojave
   end
 
   depends_on "go" => :build
